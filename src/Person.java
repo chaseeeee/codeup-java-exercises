@@ -15,7 +15,7 @@ public class Person {
 
   // prints a message to the console using the person's name
   public void sayHello(String name) {
-    System.out.println("Hello " + name);
+    System.out.println("Hello " + this.name);
   }
 
 /* Nothing more below this line except for closing braces... :) */
