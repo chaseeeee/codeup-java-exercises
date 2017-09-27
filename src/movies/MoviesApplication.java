@@ -20,7 +20,8 @@ public class MoviesApplication {
               "2. Sci-Fi \n" +
               "3. Musical \n" +
               "4. Comedy \n" +
-              "5. All Movies in Database");
+              "5. Horror \n" +
+              "6. List All Movies");
 
       information = userInput.getInt();
 
@@ -37,7 +38,9 @@ public class MoviesApplication {
       } else if (information == 4) {
         movieCategory = "comedy";
       } else if (information == 5) {
-        movieCategory = "all";
+        movieCategory = "horror";
+      } else if (information == 6) {
+          movieCategory = "all";
       }
 
       System.out.println("The category you selected was: " + movieCategory);
@@ -48,7 +51,10 @@ public class MoviesApplication {
       Movie[] movies = MoviesArray.findAll();
 
       for (Movie movie : movies) {
-        if (movieCategory == movie.getCategory()) {
+        if (movieCategory == "all") {
+          System.out.println(movie.getName());
+        }
+        else if (movieCategory == movie.getCategory()) {
           System.out.println(movie.getName() + " " + movie.getCategory());
         }
       }
