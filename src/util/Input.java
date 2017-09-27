@@ -25,7 +25,7 @@ public class Input {
       scan.nextLine();
       return input;
     } else {
-      System.out.println("That's not an integer! Try again.");
+      System.out.println("Please try again.");
       scan.nextLine();
       return getInt();
     }
@@ -47,7 +47,7 @@ public class Input {
     if (this.scan.hasNextDouble()) {
       return this.scan.nextDouble();
     } else {
-      System.out.println("That's not an double! Try again.");
+      System.out.println("That's not an double...");
       scan.nextLine();
       return getDouble();
     }
@@ -57,7 +57,7 @@ public class Input {
     double userInput = getDouble();
 
     if (userInput < min || userInput > max) {
-      System.out.println(userInput + " is not between " + min + " and " + max);
+      System.out.println(userInput + " is not within " + min + " and " + max);
       return getDouble(min, max);
     }
 
