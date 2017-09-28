@@ -1,20 +1,20 @@
 package shapes;
 
-public class Rectangle {   // defining the Rectangle class...
+public class Rectangle {   // Defining the Rectangle class.
 
-  private int length;
+  private int length;  // Defined variables to use in the class.
   private int width;
 
-  public Rectangle(int length, int width){   // This is the rectangle constructor...
+  public Rectangle(int length, int width){   // This is the rectangle constructor accepting 2 variables.
     this.length = length;
     this.width = width;
   }
 
-  public int getArea() {
+  public int getArea() {     // This is the method that calculates the getArea for the Rectangle class.
     return this.length * this.width;
 
   }
-  public int getPerimeter() {
+  public int getPerimeter() {      // This is the method that calculates the getPerimeter for the Rectangle class.
     return this.length * 2 + this.width * 2;
   }
 
