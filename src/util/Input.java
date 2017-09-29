@@ -60,8 +60,6 @@ public class Input {
       System.out.println(userInput + " is not within " + min + " and " + max);
       return getDouble(min, max);
     }
-
     return userInput;
   }
-
 }
