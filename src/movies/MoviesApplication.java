@@ -1,6 +1,6 @@
-package movies;
+package movies; // Defines the directory that it's in.
 
-import util.Input;
+import util.Input;   // Import the util.Input class
 
 public class MoviesApplication {
 
