@@ -1,16 +1,34 @@
 package shapes;
 
-public class Square extends Rectangle{
+public abstract class Square extends Quadralateral implements Measurable {
 
-public Square(int side){
-  super(side, side);
+  public Square(double length, double width) {
+    super(length, width);
+  }
+
+  @Override
+  protected void setLength(double length) {
+    this.length = length;
+  }
+
+  @Override
+  protected void setWidth(double width) {
+    this.width = width;
+  }
+
+  @Override
+  public double getArea() {
+    return this.length * this.width;
+  }
+
+  @Override
+  public double getPerimeter()
+  {
+    return this.length * 2 + this.width * 2;
+  }
+
+  // End of the class body.
 }
-}
 
 
-/*
 
-        Create a class named Square, also inside of shapes, that extends Rectangle. Square should define a constructor that accepts one argument, side, and calls the parent's constructor to set both the length and width to the value of side.
-
-
-        */

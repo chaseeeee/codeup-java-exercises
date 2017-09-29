@@ -1,6 +1,6 @@
 package shapes;
 
-public class ShapesTest {
+public class ShapesTest_OLD {
 
   public static void main(String[] args) {
 
