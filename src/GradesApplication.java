@@ -4,17 +4,20 @@ public class GradesApplication {
 
   public static void main(String[] args) {
 
+    Student ryan = new Student("Ryan");
+    Student luis = new Student("Luis");
+    Student zach = new Student("Zach");
+    Student fer = new Student("Fernando");
+
     HashMap<String, String> students = new HashMap<>();
-    students.put("Ryan", "ryanorsinger");
-    students.put("Luis", "MontealegreLuis");
-    students.put("Zach", "zgulde");
-    students.put("Fernando", "fmendozaro");
-    students.put("Justin", "jreich5");
-    students.get("Ryan"); // "ryanorsinger"
-    students.get("Phillip"); // null
-    students.getOrDefault("Daniel", "gocodeup");
-    students.containsKey("Luis"); // true
-    students.containsValue("zgulde"); // true
+    students.put("Ryan", 90.7);
+    students.put("Luis", 76.8);
+    students.put("Zach", 55.7);
+    students.put("Fernando", 77.0);
+
+
+
+
 
   }
 
