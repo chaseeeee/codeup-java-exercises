@@ -1,7 +1,4 @@
+package PACKAGE_NAME;
+
 public class HighLow {
-
-  public static void main(String[] args) {
-
-  }
-
 }
